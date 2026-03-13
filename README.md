@@ -1,1 +1,14 @@
-# Data-structure-practical-program-44
+# Data-structure-practical-program-44class Solution {
+  public:
+    int largest(vector<int> &arr) {
+        int maxVal = arr[0];
+        
+        for(int i = 1; i < arr.size(); i++) {
+            if(arr[i] > maxVal) {
+                maxVal = arr[i];
+            }
+        }
+        
+        return maxVal;
+    }
+};
